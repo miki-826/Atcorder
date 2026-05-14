@@ -33,4 +33,3 @@ for i in range(all):
             a=C[0]
             C.pop(0)
     
-print(A,B,C)
