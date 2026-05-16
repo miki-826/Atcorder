@@ -14,7 +14,6 @@ AtCoderの練習用リポジトリです。
 ## アップロード方法
 
 ```bash
-cd C:\Users\micke\OneDrive\Desktop\atcorder\codes
 git add .
 git commit -m "コンテスト名（例：ABC045）"
 git push
