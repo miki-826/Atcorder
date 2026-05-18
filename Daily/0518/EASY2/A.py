@@ -1,2 +1,3 @@
-N, M = map(int, input().split())
-print(N**M)
+N, X = map(int, input().split())
+S="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+print(S[(-(-X//N)-1)])

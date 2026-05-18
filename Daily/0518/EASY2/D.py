@@ -1,8 +1,12 @@
-T,X = map(int, input().split())
-A = list(map(int, input().split()))
-cnt=A[0]
-print(0,cnt)
-for i in range(1,T+1):
-  if abs(A[i]-cnt)>=X:
-    cnt=A[i]
-    print(i,cnt)
+X,Y = map(int, input().split())
+cnt=0
+ans=0
+for i in range(1,7):
+  for d in range(1,7):
+    if i+d >=X:
+      cnt+=1
+    if abs(i-d)>=Y:
+      ans+=1
+      if abs(i-d)>=Y and i+d >=X:
+        ans-=1
+print((cnt+ans)/36)

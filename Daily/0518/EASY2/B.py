@@ -1,4 +1,6 @@
-S=input()
+S=list(input())
 for i in range(len(S)):
-  if S[i].isupper():
-    print(S[i],end="")
+  if S[i]==".":
+    S[i]=""
+for g in range(len(S)):
+  print(S[g],end="")
